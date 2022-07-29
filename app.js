@@ -15,11 +15,7 @@ const shopController = require('./controllers/shop');
 const isAuth = require('./middleware/is-auth');
 const User = require('./models/user');
 
-
-console.log(process.env.MONGGO_USER)
-
 const MONGODB_URI =
-// 'mongodb+srv://market:ecommercemarket@cluster0.qmwr4.mongodb.net/shop';
 
 `mongodb+srv://${process.env.MONGGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.qmwr4.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}`
 
